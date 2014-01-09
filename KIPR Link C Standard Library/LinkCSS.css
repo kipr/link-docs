@@ -24,6 +24,18 @@ img.CLButton
 	margin: none;
 }
 
+img.center 
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centerTable 
+{ 
+  margin: 0px auto; 
+} 
+
 #Title
 {
 	text-align: center;
@@ -58,10 +70,14 @@ p.Code div.codeblock
 	text-indent: 50;
 }
 
+p.center 
+{ 
+        text-align: center; 
+}
 font.Comment
 {
 	font-family: Monospace; 
-	font-style: italic;
+	//font-style: italic;
 	color: darkgreen;
 }
 
@@ -75,6 +91,12 @@ font.CFunction
 {
 	font-family: Monospace; 
 	//color: Purple;
+}
+
+font.Preprocessor
+{
+	font-family: Monospace; 
+	color: #CC33CC;
 }
 
 font.Quote
@@ -97,6 +119,7 @@ pre
 	width: auto;
 	overflow: auto; /*--If the Code exceeds the width, a scrolling is available--*/
 	overflow-Y: hidden;  /*--Hides vertical scroll created by IE--*/
+	white-space: pre-wrap; /*--Causes text to wrap--*/
 }
 pre code 
 {
